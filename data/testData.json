@@ -1,0 +1,61 @@
+{
+  "validUser": {
+    "username": "testuser",
+    "password": "Test@123"
+  },
+  "invalidUser": {
+    "username": "invaliduser",
+    "password": "WrongPass123"
+  },
+  "testData": {
+    "expectedErrorMessage": "Invalid username or password",
+    "loginPageTitle": "Login",
+    "dashboardTitle": "Dashboard"
+  },
+  "signupData": {
+    "validUser": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "Test@123",
+      "confirmPassword": "Test@123"
+    },
+    "invalidUser": {
+      "name": "Jane Doe",
+      "email": "invalid-email",
+      "password": "short",
+      "confirmPassword": "different"
+    },
+    "expectedMessages": {
+      "success": "Account created successfully",
+      "emailError": "Please enter a valid email address",
+      "passwordError": "Password must be at least 8 characters",
+      "passwordMismatch": "Passwords do not match"
+    }
+  },
+  "profileData": {
+    "validUpdate": {
+      "name": "John Updated",
+      "email": "john.updated@example.com",
+      "phone": "+1234567890"
+    },
+    "invalidUpdate": {
+      "name": "",
+      "email": "invalid-email",
+      "phone": "invalid-phone"
+    },
+    "expectedMessages": {
+      "success": "Profile updated successfully",
+      "nameError": "Name is required",
+      "emailError": "Please enter a valid email address",
+      "phoneError": "Please enter a valid phone number"
+    }
+  },
+  "settingsData": {
+    "languages": ["English", "Spanish", "French", "German"],
+    "defaultLanguage": "English",
+    "expectedMessages": {
+      "success": "Settings saved successfully",
+      "error": "Failed to save settings"
+    }
+  }
+} 
